@@ -1,0 +1,187 @@
+
+ion-select {
+  width: 100%;
+  justify-content: Left;
+}
+
+/* Set the flex in order to size the text width to its content */
+ion-select::part(placeholder),
+ion-select::part(text) {
+  flex: 0 0 auto;
+}
+
+/* Set the placeholder color and opacity */
+ion-select::part(placeholder) {
+  color: rgba(66, 133, 244, 0.5);
+  opacity: 1;
+  font: bold;
+  font-size: 14px;
+}
+
+// ion-list{
+//   background-color: #F1F3F4;
+//   border-bottom: 1  px solid #dadce0;
+// }
+
+ion-card{
+  border-radius: 10px !important;
+  padding-bottom: 5px;
+}
+
+ion-card-header{
+  border-radius: 10px !important;
+}
+
+  ion-row{
+    font-size: 8px !important;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+
+ion-toolbar{
+  --background:#fff;
+  color:#fff;
+}
+
+h1{
+  margin: 0px !important;
+}
+
+h2{
+  margin: 0px !important;
+}
+
+h4{
+  margin: 0px !important;
+  font-size: 12px;
+}
+#faq{
+  ul{
+    padding: 0;
+
+    li{
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      background: #fff;
+      box-shadow: 0 3px 10 px -2px rgba(0,0,0,0.1);
+      +{
+        li{
+          margin-top: 0px;
+        }
+      }
+      i{
+        position: absolute;
+        transform: translate(-6px,0);
+        margin-top: 0px;
+        right: 15px;
+        &:before{
+          content: "";
+          position: absolute;
+          transition: all 0.3s;
+          background-color: #000;
+          width: 3px;
+          height: 9px;
+          transform: translate(-2px,0) rotate(45deg);
+        }
+        &:after{
+          transform: translate(-2px,0) rotate(45deg);
+          transition: all 0.3s;
+          content: "";
+          position: absolute;
+          background-color: #000;
+          width: 3px;
+          height: 9px;
+        }
+      }
+      input[type="checkbox"]{
+        position: absolute;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        touch-action: manipulation;
+        &:checked{
+          ~{
+            h2{
+              color: #000;
+            }
+            table{
+              max-height: 0;
+              transition: 0.3s;
+              opacity: 0;
+            }
+            i{
+              &:before{
+                transform: translate(2px,0) rotate(45deg);
+              }
+              &:after{
+                transform: translate(2px,0) rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+    .no-select{
+      user-select: none;
+    }
+    h2{
+      color: #fff;
+      font-size: 20px;
+      line-height: 34px;
+      text-align: center;
+      padding: 15px 15px 0;
+      text-transform: none;
+      font-weight: 300;
+      letter-spacing: 1px;
+      display:block;
+      margin: 0;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    table{
+      color: #333;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.45;
+      position: relative;
+      overflow: hidden;
+      will-change: max-height;
+      contain: layout;
+      display: inline-block;
+      opacity: 1;
+      transform: translate(0,0);
+      margin-top: 4px;
+      margin-bottom: 10px;
+
+      transition: 0.3s opacity, 0.6s max-height;
+    }
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+td {
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  padding: 8px;
+  border-bottom: solid 1px;
+}
+
+th {
+  background-color:rgba(66, 133, 244, 0.5);
+  text-align: center;
+  padding: 8px;
+  font-size: 9px;
+  border-bottom: solid 1px;
+}

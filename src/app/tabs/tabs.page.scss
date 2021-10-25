@@ -1,7 +1,13 @@
-::toolbar-container {
-  background: black !important;
+ion-header {
+  ion-toolbar {
+    --background: #444;
+    --color: #fff;
+  }
 }
 
-.blue-button{
-  background: blue;
+ion-tabs{
+  ion-tab-bar{
+    --background: #1976d2;
+    --color: #fff;
+  }
 }

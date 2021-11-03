@@ -185,3 +185,10 @@ th {
   font-size: 9px;
   border-bottom: solid 1px;
 }
+
+ion-select::part(placeholder) {
+  color: #4285f4;
+  opacity: 1;
+  font: bold;
+  font-size: 14px;
+}

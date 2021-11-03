@@ -11,3 +11,11 @@ ion-tabs{
     --color: #fff;
   }
 }
+
+ion-select::part(placeholder) {
+  color: #4285f4;
+  opacity: 1;
+  font: bold;
+  font-size: 14px;
+}
+
